@@ -2,11 +2,11 @@
 name = "stylus-token-sale"
 version = "0.1.0"
 edition = "2021"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 homepage = "https://github.com/anistark/stylus-token-sale"
 repository = "https://github.com/anistark/stylus-token-sale"
 keywords = ["arbitrum", "ethereum", "stylus", "alloy"]
-description = "Stylus Token Sale Example"
+description = "Stylus Token Sale"
 
 [dependencies]
 alloy-primitives = "=0.7.6"

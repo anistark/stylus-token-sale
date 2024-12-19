@@ -110,31 +110,7 @@ Confirmed tx 0x0bdb…3307, gas used 14044638
 
 Once both steps are successful, you can interact with your program as you would with any Ethereum smart contract.
 
-## Calling Your Program
-
-This template includes an example of how to call and transact with your program in Rust using [ethers-rs](https://github.com/gakonst/ethers-rs) under the `examples/counter.rs`. However, your programs are also Ethereum ABI equivalent if using the Stylus SDK. **They can be called and transacted with using any other Ethereum tooling.**
-
-By using the program address from your deployment step above, and your wallet, you can attempt to call the counter program and increase its value in storage:
-
-```rs
-abigen!(
-    Counter,
-    r#"[
-        function number() external view returns (uint256)
-        function setNumber(uint256 number) external
-        function increment() external
-    ]"#
-);
-let counter = Counter::new(address, client);
-let num = counter.number().call().await;
-println!("Counter number value = {:?}", num);
-
-let _ = counter.increment().send().await?.await?;
-println!("Successfully incremented counter via a tx");
-
-let num = counter.number().call().await;
-println!("New counter number value = {:?}", num);
-```
+## Calling Token and Token Sale Functions
 
 Before running, set the following env vars or place them in a `.env` file (see: [.env.example](./.env.example)) in this project:
 
@@ -144,13 +120,9 @@ STYLUS_CONTRACT_ADDRESS=<the onchain address of your deployed program>
 PRIV_KEY_PATH=<the file path for your priv key to transact with>
 ```
 
-Next, run:
+**TBD**
 
-```
-cargo run --example counter --target=<YOUR_ARCHITECTURE>
-```
-
-Where you can find `YOUR_ARCHITECTURE` by running `rustc -vV | grep host`. For M1 Apple computers, for example, this is `aarch64-apple-darwin` and for most Linux x86 it is `x86_64-unknown-linux-gnu`
+---
 
 ## Build Options
 
@@ -170,4 +142,4 @@ Where you can find `YOUR_ARCHITECTURE` by running `rustc -vV | grep host`. For M
 
 ## License
 
-This project is fully open source, including an Apache-2.0 or MIT license at your choosing under your own copyright.
+This project is fully open source MIT license.

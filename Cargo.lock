@@ -3272,7 +3272,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "stylus-token-sale"
+name = "stylus_erc20"
 version = "0.1.0"
 dependencies = [
  "alloy-primitives",

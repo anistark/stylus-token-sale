@@ -1,5 +1,10 @@
 # Stylus Token Sale
 
+This codebase has 2 parts:
+
+- [ERC20 Token](https://github.com/anistark/stylus-token-sale/blob/main/src/erc20.rs)
+- [Fixed Cost Token Sale](https://github.com/anistark/stylus-token-sale/blob/tokensale/src/lib.rs)
+
 ## Quick Start 
 
 Install [Rust](https://www.rust-lang.org/tools/install), and then install the Stylus CLI tool with Cargo

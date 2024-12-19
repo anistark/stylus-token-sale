@@ -1,6 +1,7 @@
-#![cfg_attr(not(feature = "export-abi"), no_main)]
+#![cfg_attr(target_arch = "wasm32", no_main, no_std)]
 
-#[cfg(feature = "export-abi")]
-fn main() {
-    stylus_erc20::print_abi("MIT-OR-APACHE-2.0", "pragma solidity ^0.8.23;");
-}
+pub use libtokensale::stylus_entrypoint;
+
+#[cfg(not(target_arch = "wasm32"))]
+#[doc(hidden)]
+fn main() {}

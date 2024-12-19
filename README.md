@@ -143,3 +143,9 @@ Where you can find `YOUR_ARCHITECTURE` by running `rustc -vV | grep host`. For M
 ## License
 
 This project is fully open source MIT license.
+
+```sh
+deployed code at address: 0xf37e673cd82c87f6ad9119e3b34c511e45164b6d
+deployment tx hash: 0xa7d1bb421fc6a7a279b3bbdf3981a11b2f5a289be6459649edd0efc4be8b2eca
+contract activated and ready onchain with tx hash: 0x010991a52a388a6c77c1ee18a58efe8fa2e1a29b1a6bc9ef49562a3d93b589e9
+```
